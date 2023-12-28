@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+  <link rel="stylesheet" href="style123.css">
+
+  <script type="text/javascript">
+    function preventBack(){window.history.forward()};
+    setTimeout("preventBack()",0);
+    window.onunload=function(){null;}
+  </script>
+
+</head>
+
+<body>
+  <div class="form">
+    <h1>Login here</h1>
+    <p>Username</p>
+    <input type="email" name="" placeholder="Username" autocomplete="off" id="username">
+    <p>Password :</p>
+    <input type="password" name="" placeholder="Pass" id="pass">
+    <input type="submit" name="" value="LOGIN" onclick="func()">
+  </div>
+  <script>
+    function func() {
+      var email = document.getElementById("username").value;
+      var pass = document.getElementById("pass").value;
+      if (email == 'att' && pass == '123') {
+        alert("Succesful ! ")
+        window.location.assign("http://localhost/att/")
+      }
+      else {
+        alert("Wrong entry invalid")
+      }
+    }
+
+  </script>
+</body>
+
+</html>
